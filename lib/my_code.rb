@@ -2,7 +2,7 @@ def my_map!(my_array, &block)
   new_array = Array.new
   my_array.each do |element|
     new_array.push(yield(element))
-  end
+  
   return new_array
 end
 
